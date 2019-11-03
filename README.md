@@ -10,7 +10,6 @@
 
 # for ranger/rc.conf
 - **download nerd font at baidu or google and see github for it operation** 
----
 
 - **then the theme of ranger will auto load** 
 ---
