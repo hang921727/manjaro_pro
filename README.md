@@ -8,4 +8,8 @@
 - **download nerd font at baidu or google and see github for it operation** 
 ---
 
-- **then the theme of ranger will auto load** <++>
+- **then the theme of ranger will auto load** 
+---
+
+# for problem myself encounter
+- **i will update my problem that i encounter in linux** <++>
