@@ -39,6 +39,7 @@ exec_always fcitx
 exec_always figlet sorria
 exec_always nyancat
 exec_always compton
+exec_always screenkey
 
 #floating_modifie $mod
 
@@ -66,15 +67,16 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -theme Arc-Dark
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+k focus right 
+#bindsym $mod+k focus down
+bindsym $mod+l focus down 
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -97,11 +99,6 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
@@ -109,7 +106,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -117,16 +114,16 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 # Icones:             
-set $WS1  "1:  "
-set $WS2  "2:  "
-set $WS3  "3:  "
-set $WS4  "4:  "
-set $WS5  "5:  "
-set $WS6  "6:  "
-set $WS7  "7:  "
-set $WS8  "8:  "
-set $WS9  "9:  "
-set $WS10 "10:  "
+set $WS1  "1:1:"
+set $WS2  "2:2:"
+set $WS3  "3:3:"
+set $WS4  "4:4:"
+set $WS5  "5:5:"
+set $WS6  "6:6:"
+set $WS7  "7:7:"
+set $WS8  "8:8:"
+set $WS9  "9:9:"
+set $WS10 "10:10:"
 
 # for sound control
 #bindsym XF86AudioRaiseVolume exec amixer set Master playback 5+
@@ -143,13 +140,17 @@ set $WS10 "10:  "
 #assign [class="vim"] $WS4
 
 #打开软件时自动移至相应工作区
-assign [class="i3-sensible-terminal"] $WS1
 assign [class="Firefox"] $WS2
-assign [class="google-chrome"] $W1
-assign [class="google-chrome-stable"] $WS1
-assign [class="chrome"] $WS1
+assign [class="thunar"] $WS4
+assign [class="evince"] $WS4
+assign [class="qpdfview"] $WS4
+assign [class="krita"] $WS5
+assign [class="gimp"] $WS5
+assign [class="google-chrome"] $WS2
+assign [class="google-chrome-stable"] $WS2
+assign [class="chrome"] $WS2
 assign [class="vlc"] $WS7
-assign [class="ieaseMusic"] $WS6
+assign [class="netease-cloud-music"] $WS6
 #assign [class="Firefox"] $WS2
 
 # switch to workspace
@@ -192,9 +193,9 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym u resize grow height 10 px or 10 ppt
+        bindsym i resize shrink height 10 px or 10 ppt
+        bindsym k resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -211,14 +212,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #-------------------------start-applications-----------------------------------------
-#bindsym $mod+g exec alsamixer
 bindsym $mod+g exec google-chrome-stable
 #bindsym $mod+o exec alacritty -e ranger
 bindsym $mod+o exec variety
-bindsym $mod+u exec alsamixer
+#bindsym $mod+u exec alsamixer
 #bindsys $mod+Shift+i exec xfce4-screenshooter
-bindsys $mod+I exec deepin-screenshot
-
+#bindsys $mod+I exec deepin-screenshot
+#bindsym $mod+i /home/sorria/documents/screen-lock/betterlockscreen/betterlockscreen --lock blur
 ###################thenicebot-i3-bar#############
 #####                                     ######
 ################################################
