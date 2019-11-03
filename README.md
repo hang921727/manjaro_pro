@@ -16,4 +16,11 @@
 ---
 
 # for problem myself encounter
-- **i will update my problem that i encounter in linux** <++>
+- **i will update my problem that i encounter in linux** 
+
+# last but not least
+- **if you favour my configrutions, your can leave your star** 
+
+- **if your have any questions you can leave your problems or add my QQ(2979613402)**
+
+- **thank you** <++> 
