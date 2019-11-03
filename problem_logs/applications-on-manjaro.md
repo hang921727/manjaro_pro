@@ -1,35 +1,40 @@
-安装teamviewer
+# some useful applications
+
+$ sudo pacman-mirrors -c China
+$ sudo pacman -Syyu
+
+**安装teamviewer**
+
 $ sudo pacman -S teamviewer
 $ sudo nano /opt/teamviewer/tv_bin/desktop/com.teamviewer.TeamViewer.desktop
-----------------------------------------------------------------------------------
 Exec=/bin/sudo /opt/teamviewer/tv_bin/script/teamviewer passwd 123456
 
-网易云音乐
+**网易云音乐**
+
 $ sudo pacman -S netease-cloud-music vlc
 $ sudo nano /usr/share/applications/netease-cloud-music.desktop
----------------------------------------------------------------------
 Exec=/opt/netease/netease-cloud-music/netease-cloud-music %U
 
-腾讯TIM
-$sudo pacman -S deepin.com.qq.office
+**腾讯TIM**
+
+$ sudo pacman -S deepin.com.qq.office
     add the following in your /etc/pacman.conf
     [archlinuxcn]
     SigLevel = Never
     Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 $sudo pacman Syu
 $sudo pacman -S gnome-settings-daemon
----------------------------------------------------------------------
 exc=/usr/lib/gsd-xsettings then start tim
 
-redshift: 护眼工具，需要额外配置
+**redshift: 护眼工具，需要额外配置**
 
-wqy-microhei : 开源免费的中文字体
+**wqy-microhei : 开源免费的中文字体**
 
-git : 下载github代码工具
+**git : 下载github代码工具**
 
-wget : 命令行下载工具，支持http，ftp
+**wget : 命令行下载工具，支持http，ftp**
 
-vim : 很好用的编辑器
+**vim : 很好用的编辑器**
 
 zsh : 终端美化，主题可以到 ohmyz.sh 去看
 
@@ -41,15 +46,15 @@ bluez和bluez-utils:蓝牙模块包
 
 firefox, firefox-i18n-zh-cn: 火狐浏览器及简体中文包
 
-google-chrome : 谷歌浏览器
+**google-chrome : 谷歌浏览器**
 
-deepin.com.qq.im[deepin-wine] : 腾讯QQ
+**deepin.com.qq.im[deepin-wine] : 腾讯QQ**
 
-screenfetch ： 装逼神器
+**screenfetch ： 装逼神器**
 
-neofetch ： 装逼神器
+**neofetch ： 装逼神器**
 
-lolcat : 彩虹装逼神器，结合screenfetch或者neofetch使用
+**lolcat : 彩虹装逼神器，结合screenfetch或者neofetch使用**
 
 file-roller : 桌面GUI解压软件
 
@@ -112,7 +117,7 @@ android-tools：安卓调试工具，adb
 
 jetbrains-toolbox[aur] : jetbrains家族软件的管理工具
 
-wechat-devtools [aur]: 微信开发者工具
+**wechat-devtools [aur]: 微信开发者工具**
 
 another-redis-desktop-manager [aur]: redis管理工具
 
