@@ -1,6 +1,5 @@
 - **1 create a fonts directory:**
 
-
     `$ cd /usr/share/fonts && mkdir new-fonts && cd new-fonts`
 
 - **2 download fonts style on baidu or google(nerd fonts: https://www.nerdfonts.com/) and unzip it**
