@@ -11,4 +11,11 @@
 - **download nerd font at baidu or google and see github for it operation** 
 
 - **then the theme of ranger will auto load** 
+
+# last but not lest 
+
+- **click following site to see more detail descriptions**
+
+[config](https://github.com/JasonSorria/linux/tree/master/i3_config)
 ---
+
